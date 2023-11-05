@@ -6,8 +6,14 @@ Merupakan sebuah project UTS Pemograman Mobile berbasis React Native yang berisi
 
 # Requirement :
 1. React Native Navigator 
-``` npm install @react-navigation/native ```
+```
+npm install @react-navigation/native
+```
 2. React Native Navigator Stack
-``` npm install @react-navigation/native-stack ```
+```
+npm install @react-navigation/native-stack
+```
 3. Icon Vector
-``` npm install --save react-native-vector-icons ```
+```
+npm install --save react-native-vector-icons
+```
