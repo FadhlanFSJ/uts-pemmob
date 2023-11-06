@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image, Linking, ImageBackground } from 'react-native';
-import Article from './article';
 import {Separator, Button} from '../components/index';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { StatusBar } from 'expo-status-bar';
@@ -26,7 +25,7 @@ class Homepage extends Component {
         resizeMode={'cover'}
         ><View style={{flex: 0.5}}></View>
         </ImageBackground>
-        <View style={{flex: 1, backgroundColor:'#FFFFFF'}}>
+        <View style={{flex: 1, backgroundColor:'#DEFAF5'}}>
           <View style={{
             justifyContent: 'center',
             alignItems: 'center',

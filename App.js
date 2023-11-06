@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Article from './screens/article';
@@ -16,8 +15,19 @@ class App extends Component {
         <StatusBar style="auto" />
         <Stack.Navigator initialRouteName="Homepage">
           <Stack.Screen name="Homepage" component={Homepage} options={{ headerShown: false }} />
-          <Stack.Screen name="Article" component={Article} options={{ headerTitle: 'List Berita'}}/>
-          <Stack.Screen name="DetailArticle" component={DetailArticle} options={{ headerTitle: 'Detail Berita'}} />
+          <Stack.Screen name="Article" component={Article} options={{ headerTitle: 'List Berita', 
+          headerStyle: {
+            backgroundColor: 'red',
+            elevation: 5,
+          }, headerTitleStyle: {
+            color: 'white'
+          }
+          }}/>
+          <Stack.Screen name="DetailArticle" component={DetailArticle} options={{ headerTitle: 'Detail Berita', headerStyle:{
+            backgroundColor: 'red',
+          }, headerTitleStyle: {
+            color: 'white'
+          }}} />
         </Stack.Navigator>
       </NavigationContainer>
     );

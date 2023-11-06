@@ -1,9 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View, FlatList, Image, Dimensions, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, FlatList, Image, Dimensions } from 'react-native';
 import React, { Component } from 'react';
 import { Separator, Button } from '../components/index';
-import Homepage from './homepage';
-import DetailArticle from './detail_article';
 import { StatusBar } from 'expo-status-bar';
+import { useState, useEffect } from 'react';
+import { ActivityIndicator } from 'react-native';
 
 const windowWidth = Dimensions.get("window").width;
 
@@ -12,6 +12,7 @@ class Article extends Component {
     super(props);
     this.state = {
       data: [],
+      isLoading: true,
     };
   }
   componentDidMount(){
@@ -24,7 +25,7 @@ class Article extends Component {
     fetch('https://raw.githubusercontent.com/dauditts/pm-static-api/main/articles.json')
       .then((response) => response.json())
       .then((json) => {
-        this.setState({ data: json.articles });
+        this.setState({ data: json.articles, isLoading : false});
       })
       .catch((error) => {
         console.error(error);
@@ -49,22 +50,28 @@ class Article extends Component {
   }
 
   render() {
-    return (
-        <View style={{ flex: 1 }}>
-          <StatusBar style="auto" />
-          <FlatList
-              data={this.state.data}
-              renderItem={this.renderItem}
-              keyExtractor={(item) => item.id}
-          />
-          <TouchableOpacity>
-              <Button
-                  text="Back"
-                  onPress={this.backToHomepage}
-              />
-          </TouchableOpacity>
-        </View>
-    );
+    if (this.state.isLoading){
+      <View style={styles.container}>
+        <ActivityIndicator size="large" color='blue' />
+      </View>
+    }else{
+      return (
+          <View style={{ flex: 1 }}>
+            <StatusBar style="auto" />
+            <FlatList
+                data={this.state.data}
+                renderItem={this.renderItem}
+                keyExtractor={(item) => item.id}
+            />
+            <TouchableOpacity>
+                <Button
+                    text="Back"
+                    onPress={this.backToHomepage}
+                />
+            </TouchableOpacity>
+          </View>
+      );
+    }
   }
 }
 
@@ -88,10 +95,10 @@ const styles = StyleSheet.create({
       height: 80,
     },
     itemText: {
-      fontSize: 12,
+      fontSize: 15,
       width: windowWidth - 150,
       marginLeft: 15,
-      fontWeight: 'bold'
+      fontWeight: 'bold',
     },
     date: {
         fontSize: 12,
