@@ -13,15 +13,17 @@ class Button extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#ADD8E6",
+    backgroundColor: "#e31e00",
     padding: 15,
     alignItems: "center",
     borderRadius: 5,
+    elevation: 5,
   },
   text: {
     fontSize: 14,
     textTransform: "uppercase",
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#FFFFFF',
   },
 });
 

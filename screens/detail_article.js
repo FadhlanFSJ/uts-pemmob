@@ -43,7 +43,7 @@ class DetailArticle extends Component {
                 </View>
                 
             </ScrollView>
-            <Button text="Back" onPress={() => this.backHomepage()} style={styles.backbtn}/>
+            {/* <Button text="Back" onPress={() => this.backHomepage()} style={styles.backbtn}/> */}
             </>
         );
     }

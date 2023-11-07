@@ -63,12 +63,12 @@ class Article extends Component {
                 renderItem={this.renderItem}
                 keyExtractor={(item) => item.id}
             />
-            <TouchableOpacity>
+            {/* <TouchableOpacity>
                 <Button
                     text="Back"
                     onPress={this.backToHomepage}
                 />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
       );
     }
