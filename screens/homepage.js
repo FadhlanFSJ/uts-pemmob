@@ -137,18 +137,17 @@ const styles = {
   },
   keterangan: {
     fontWeight: 'bold',
+    
   },
   content:{
-    flexDirection: 'column',
     justifyContent: 'center',
-    marginTop: 10,
     flex: 1,
     marginLeft: 10,
   },
   iconstyles:{
     justifyContent: 'center',
     alignItems: 'center',
-    widht: 40,
+    width: 40,
     height: 40
   },
   betweenicons: {
