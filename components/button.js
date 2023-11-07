@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     textTransform: "uppercase",
+    fontWeight: 'bold'
   },
 });
 

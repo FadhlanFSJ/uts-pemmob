@@ -23,7 +23,8 @@ class App extends Component {
             color: 'white'
           }
           }}/>
-          <Stack.Screen name="DetailArticle" component={DetailArticle} options={{ headerTitle: 'Detail Berita', headerStyle:{
+          <Stack.Screen name="DetailArticle" component={DetailArticle} options={{ headerTitle: 'Detail Berita', 
+          headerStyle:{
             backgroundColor: 'red',
           }, headerTitleStyle: {
             color: 'white'

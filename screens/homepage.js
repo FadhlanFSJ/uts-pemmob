@@ -25,7 +25,7 @@ class Homepage extends Component {
         resizeMode={'cover'}
         ><View style={{flex: 0.5}}></View>
         </ImageBackground>
-        <View style={{flex: 1, backgroundColor:'#DEFAF5'}}>
+        <View style={{flex: 1, backgroundColor:'#FFFFFF'}}>
           <View style={{
             justifyContent: 'center',
             alignItems: 'center',
@@ -45,7 +45,7 @@ class Homepage extends Component {
             <Text style={styles.nama}>{fullName}</Text>
             <Text style={styles.desc}>{nim}</Text>
             <View style={{ justifyContent: 'center', alignItems: 'center'}}>
-              <Image source={require('../assets/logo.png')} 
+              <Image source={require('../assets/logoif.png')} 
               style={{
                 resizeMode: 'contain',
                 width: 200,

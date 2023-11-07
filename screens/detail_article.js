@@ -31,7 +31,7 @@ class DetailArticle extends Component {
                         <Separator height={10} />
                         <Text style={styles.date}>Diubah pada tanggal : {data.date}</Text>
                         <Separator height={10} />
-                        <Text style={styles.text}>{data.content}</Text>
+                        <Text style={styles.content}>{'\u00A0\u00A0\u00A0\u00A0\u00A0'}{data.content}</Text>
                         <Separator height={20} />
                     </View>
                     <Button
@@ -63,16 +63,18 @@ const styles = StyleSheet.create({
       resizeMode: "stretch",
     },
     date: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     title: {
       fontSize: 22,
       fontWeight: "bold",
       textAlign: 'center'
     },
-    text: {
-      fontSize: 12,
+    content: {
+      fontSize: 15,
       textAlign: 'justify',
+      fontFamily: 'serif',
     },
     splicingContainer: {
         padding: 10,
