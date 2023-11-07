@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Article from './screens/article';
-import Homepage from './screens/homepage';
-import DetailArticle from './screens/detail_article';
+import { Article, Homepage, DetailArticle } from './screens';
 import { StatusBar } from 'expo-status-bar';
 
 const Stack = createNativeStackNavigator();
