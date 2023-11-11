@@ -25,9 +25,7 @@ git clone https://github.com/FadhlanFSJ/uts-pemmob.git
 ```
 2. Buka CMD, lakukan instalasi yang dibutuhkan pada Requirement:
 ```
-npm install @react-navigation/native
-npm install @react-navigation/native-stack 
-npm install --save react-native-vector-icons 
+npm install
 ```
 3. Jalankan Command Ini
 ```
