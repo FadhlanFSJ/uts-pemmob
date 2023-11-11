@@ -31,7 +31,7 @@ class DetailArticle extends Component {
                         <Separator height={10} />
                         <Text style={styles.date}>Diubah pada tanggal : {data.date}</Text>
                         <Separator height={10} />
-                        <Text style={styles.content}>{'\u00A0\u00A0\u00A0\u00A0\u00A0'}{data.content}</Text>
+                        <Text style={styles.isi}>{data.content}</Text>
                         <Separator height={20} />
                     </View>
                     <Button
@@ -41,7 +41,6 @@ class DetailArticle extends Component {
                         }
                     />
                 </View>
-                
             </ScrollView>
             {/* <Button text="Back" onPress={() => this.backHomepage()} style={styles.backbtn}/> */}
             </>
@@ -71,10 +70,9 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
       textAlign: 'center'
     },
-    content: {
+    isi: {
       fontSize: 15,
       textAlign: 'justify',
-      fontFamily: 'serif',
     },
     splicingContainer: {
         padding: 10,

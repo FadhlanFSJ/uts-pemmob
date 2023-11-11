@@ -48,12 +48,12 @@ class Homepage extends Component {
               <Image source={require('../assets/logoif.png')} 
               style={{
                 resizeMode: 'contain',
-                width: 200,
-                height: 100,
+                width: 100,
+                height: 50,
               }}
               />
             </View>
-            <View style={{marginLeft: 80}}>
+            <View style={{marginLeft: 75}}>
               <View style={styles.Listsosmed}>
                 <View style={styles.iconstyles}>
                   <Icon name="whatsapp" size={25} color="#212121" />
