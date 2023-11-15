@@ -14,7 +14,7 @@ class Homepage extends Component {
     const fullName = "Fadhlan Syahran Jungjungan";
     const nim = "1203210064";
     const address = "Wiyung, Surabaya";
-    const kampus = "Institut Teknologi Telkom Surabaya";
+    const kampus = "Telkom University Surabaya";
 
     return (
       <View style={{ flex: 1}}>
@@ -114,7 +114,7 @@ class Homepage extends Component {
 
 export default Homepage;
 
-const styles = {
+const styles = StyleSheet.create({
   button: {
     padding: 10,
     backgroundColor: 'lightblue',
@@ -156,4 +156,4 @@ const styles = {
     alignItems: 'center',
 
   }
-};
+});
