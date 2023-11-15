@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, Image, Linking, ImageBackground } from 'react-native';
+import { View, Text, TouchableOpacity, Image, Linking, ImageBackground, StyleSheet } from 'react-native';
 import {Separator, Button} from '../components/index';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { StatusBar } from 'expo-status-bar';

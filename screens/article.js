@@ -24,7 +24,7 @@ class Article extends Component {
   getData = () => {
     fetch('https://raw.githubusercontent.com/dauditts/pm-static-api/main/articles.json')
       .then((response) => response.json())
-      .then((json) => {
+       .then((json) => {
         this.setState({ data: json.articles, isLoading : false});
       })
       .catch((error) => {
